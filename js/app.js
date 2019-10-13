@@ -196,7 +196,8 @@ for (var j = 1; j < 8; j++) {
 var totalstring4 = 'Total : ' + totalCookies4+ ' cookies .';
   limaResult1.push(totalstring4);
 console.log(limaResult1);
-// html 
+
+// DOM 
 var paragraph = document.createElement('p') ;
 paragraph.textContent = 'Seattle';
 var contentArea = document.getElementById('content-area');
