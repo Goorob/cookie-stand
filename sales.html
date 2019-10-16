@@ -1,14 +1,41 @@
-<!DOCTYPE html>
-<html >
+<html>
 <head>
-    
-    <title>Salmon cookies</title>
+ <title>Cookies stand </title>
 </head>
 <body>
-    <main >
-        <article id ="content-area"></article>
-      
+    <header>
+        <h1> Cookies Shops </h1>
+    </header>
+    <main>
+        <h2> Add shops </h2>
+        <form id="AddShop">
+            <fieldset>
+                <legend>
+                    Basic information
+                </legend>
+                <label>
+                    Location :
+                </label>
+                <input type="text" name="name">
+                <label> Min/Cust </label>
+                <input type="number" name="min">
+
+                <label> Max/Cust </label>
+                <input type="number" name="max">
+
+                <label> Avg Cookie/Sale </label>
+                <input type="number" step=" 0.1" name="avarage">
+
+            </fieldset>
+            <button type="submit"> submit</button>
+        </form>
+        <h2> Daily Locations Amount of cookies </h2>
+        <div id="stores"></div>
     </main>
+    <footer>
+
+    </footer>
     <script src="js/app.js"></script>
 </body>
+
 </html>
