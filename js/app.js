@@ -1,5 +1,5 @@
 'use strict'
-var footerRow ; 
+var footerRows ; 
 function Stores(name, min, max, avarage) {
     this.name = name;
     this.min = min;
@@ -41,9 +41,9 @@ shopForm.addEventListener('submit', function (event) {
     var newStores = new Stores(name, min, max, avarage);
     console.log(name);
     newStores.cookiesNum();
-    storeName.push(newStores.theNumOfCookies.name);
-    // cookietable.removeChild(footerRow);
-    newStores.renderDataRows(cookietable);
+    storeName.push(newStores);
+    cookietable.removeChild(footerRows);
+    newStores.renderDataRows();
     renderfooterRows(cookietable );
     
 });
@@ -92,7 +92,7 @@ headerRow.appendChild(locationTotal);
 locationTotal.textContent = 'Daily Location Total';
 }
 renderHeaderRow(cookietable);
-Stores.prototype.renderDataRows = function (table) {
+Stores.prototype.renderDataRows = function () {
    var dataRow = document.createElement('tr');
    cookietable.appendChild(dataRow);
    var name = document.createElement('th');
@@ -111,15 +111,15 @@ for (var i = 0; i < storeName.length; i++) {
     this.storeName[i].renderDataRows();
  }
  function renderfooterRows(table) {
-    var footerRow = document.createElement('tr');
-    table.appendChild(footerRow);
+    footerRows = document.createElement('tr');
+    table.appendChild(footerRows);
     var hourTotal = document.createElement('td');
-    footerRow.appendChild(hourTotal);
+    footerRows.appendChild(hourTotal);
   hourTotal.textContent = 'Totals';
     var megsum = 0;
     for (var hourIndex = 0; hourIndex < hours.length; hourIndex++) {
         var td = document.createElement('td');
-        footerRow.appendChild(td);
+        footerRows.appendChild(td);
         var sum = 0;
         for (var shopIndex = 0; shopIndex < storeName.length; shopIndex++) {
             var shop =storeName[shopIndex];
@@ -129,7 +129,7 @@ for (var i = 0; i < storeName.length; i++) {
         megsum += sum;
     }
     var td = document.createElement('td');
-    footerRow.appendChild(td);
+    footerRows.appendChild(td);
     td.textContent = megsum;
  }
  renderfooterRows(cookietable);
