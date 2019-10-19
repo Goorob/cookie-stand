@@ -1,0 +1,50 @@
+table, th, td {
+   border: 1px solid gray;
+   text-align: center;
+ }
+ table {
+   width: 100%;
+   color: wheat;
+ }
+ 
+ th {
+   height: 50px;
+   color: rgb(72, 87, 8)
+ }
+ tr:hover {
+    background-color: rgb(206, 113, 32);
+}
+ input {
+   border: 2px dotted grey;
+   border-radius: 4px;
+ }
+ legend {
+    color:rgb(72, 87, 8) ;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ label {
+  color :wheat ;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ 
+   button {
+      background-color: white; 
+      color: rgb(72, 87, 8); 
+      border: 2px solid gray;
+      padding: 12px 28px;
+      font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
+    }
+    
+    button:hover {
+      background-color:rgb(72, 87, 8);
+      color: white;
+    }
+ h2{
+    color :rgb(72, 87, 8);
+   font-size: 20px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+ }
