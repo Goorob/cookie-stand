@@ -6,7 +6,7 @@ h1 {
  text-align: center;
  font-size: 50px;
  font-style: oblique ;
- font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-family: 'Indie Flower', cursive;
   border: 2px solid white; 
  letter-spacing: 50px;
  text-shadow: 0 0 20px wheat;
@@ -26,7 +26,7 @@ margin-left: 260px;
     margin-left: 250px;  
     margin-bottom: 100px;
 color:rgb(72, 87, 8);
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-family: 'Shadows Into Light', cursive;
 border: 2px dotted white;
   border-radius: 5px;
 padding: 10px;
@@ -39,10 +39,11 @@ font-size: 30px;
 }
 .heads {
     display: inline;
-font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Dancing Script', cursive;
 color: olive;
 font-style: italic;
 border-bottom: 6px solid white ;
+font-size: 40px;
  padding: 5px;
 }
 #cutter {
